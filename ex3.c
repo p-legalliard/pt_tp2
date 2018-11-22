@@ -16,7 +16,7 @@ int StrToInt(char *arg){
     int Taille = strlen(arg);
     int Result = 0;
     for(int i=0; i<Taille;i++){
-        Result = 10*Result + arg[i];
+        Result = 10*Result + arg[i] - '0';
     }
     return Result;
 }
